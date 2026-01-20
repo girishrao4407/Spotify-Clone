@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/favicon.svg"
+      sizes="any"
+    />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left p-1">
+        <div class="home bg-grey rounded p-1 m-1">
+          <div class="logo">
+            <img class="invert" src="assets/logo.svg" alt="" />
+          </div>
+          <ul>
+            <li><img class="invert" src="assets/home.svg" alt="Home" />Home</li>
+            <li>
+              <img class="invert" src="assets/search.svg" alt="Search" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded p-1 m-1">
+          <div class="heading">
+            <img class="invert" src="assets/playlist.svg" alt="" />
+            <h2>Your Library</h2>
+          </div>
+          <div class="songlist">
+            <ul>
+              <li>
+                <img class="invert" src="/assets/music.svg" alt="" />
+                <div class="info">
+                  <div>Song name</div>
+                  <div>song artist</div>
+                </div>
+                <img class="invert" src="/assets/play.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="#"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="#"><span>Privacy Center</span></a>
+            </div>
+            <div>
+              <a href="#"><span>Privacy Policy</span></a>
+            </div>
+            <div>
+              <a href="#"><span>Cookies</span></a>
+            </div>
+            <div>
+              <a href="#"><span>About Ads</span></a>
+            </div>
+            <div>
+              <a href="#"><span>Accessibility</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <img class="invert hamberger" src="assets/hamberger.svg" alt="" />
+            <img class="invert left-arrow" src="assets/left-arrow.svg" alt="" />
+            <img
+              class="invert right-arrow"
+              src="assets/right-arrow.svg"
+              alt=""
+            />
+          </div>
+          <div class="btns">
+            <button class="signupBtn">Sign Up</button>
+            <button class="loginBtn">Log In</button>
+          </div>
+        </div>
+        <div class="spotify-playlists">
+          <h1>Spotify Playlists</h1>
+          <div class="cardContainer">
+            <!-- the code will be loaded here -->
+          </div>
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="songBtns">
+              <div class="songinfo"></div>
+              <div class="playCtrs">
+                <img
+                  class="invert"
+                  id="previous"
+                  src="assets/previous.svg"
+                  alt="Previous"
+                />
+                <img
+                  class="invert"
+                  id="play"
+                  src="assets/play.svg"
+                  alt="Play"
+                />
+                <img
+                  class="invert"
+                  id="next"
+                  src="assets/next.svg"
+                  alt="Next"
+                />
+              </div>
+              <div class="songtime"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
